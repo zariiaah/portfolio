@@ -6,17 +6,15 @@ Plain HTML, CSS and JavaScript. Ready for **GitHub Pages**.
 
 1. **Create a new repository** on GitHub (for example `portfolio`). Do not add a README if you already have files locally.
 
-2. **Push this folder** (replace `YOUR_USER` and `portfolio`):
+2. **Push this folder** (replace `portfolio` if you use another repo name). For account [**zariiaah**](https://github.com/zariiaah):
 
    ```bash
    cd /path/to/roblox-portfolio
-   git init
-   git add .
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USER/portfolio.git
+   git remote add origin https://github.com/zariiaah/portfolio.git
    git push -u origin main
    ```
+
+   This repo is already configured so commits use **`zariiaah`** and **`zariiaah@users.noreply.github.com`** (not another local identity). If commits do not attach to your profile, open **GitHub → Settings → Emails** and either enable the private **noreply** address GitHub shows or set `git config user.email` to that exact address, then amend future commits.
 
 3. **Turn on Pages:** In the repo on GitHub go to **Settings → Pages**.
 
