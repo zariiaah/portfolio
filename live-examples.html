@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Screen recordings of Roblox and tooling work — live examples from Zariah."
+    />
+    <title>Live Examples · Zariah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <noscript
+      ><style>
+        .reveal,
+        .reveal--stagger > * {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="logo" href="index.html">Zariah</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#work">Work</a>
+          <a href="live-examples.html" aria-current="page">Live Examples</a>
+          <a href="index.html#capabilities">Capabilities</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero hero--sub">
+        <div class="wrap hero-inner reveal reveal--stagger">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Live examples</h1>
+          <p class="lede">
+            Screen recordings of recent work. Use the controls on each clip to play, pause and
+            scrub.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-tint">
+        <div class="wrap reveal">
+          <h2 class="section-title visually-hidden">Videos</h2>
+          <div class="video-grid">
+            <figure class="video-embed">
+              <div class="video-frame">
+                <video controls playsinline preload="metadata">
+                  <source src="videos/example-130306.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                  <a href="videos/example-130306.mp4">Download this clip</a>.
+                </video>
+              </div>
+              <figcaption class="video-caption">Example 1</figcaption>
+            </figure>
+            <figure class="video-embed">
+              <div class="video-frame">
+                <video controls playsinline preload="metadata">
+                  <source src="videos/example-130936.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                  <a href="videos/example-130936.mp4">Download this clip</a>.
+                </video>
+              </div>
+              <figcaption class="video-caption">Example 2</figcaption>
+            </figure>
+            <figure class="video-embed">
+              <div class="video-frame">
+                <video controls playsinline preload="metadata">
+                  <source src="videos/example-125302.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                  <a href="videos/example-125302.mp4">Download this clip</a>.
+                </video>
+              </div>
+              <figcaption class="video-caption">Example 3</figcaption>
+            </figure>
+            <figure class="video-embed">
+              <div class="video-frame">
+                <video controls playsinline preload="metadata">
+                  <source src="videos/example-130639.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                  <a href="videos/example-130639.mp4">Download this clip</a>.
+                </video>
+              </div>
+              <figcaption class="video-caption">Example 4</figcaption>
+            </figure>
+            <figure class="video-embed">
+              <div class="video-frame">
+                <video controls playsinline preload="metadata">
+                  <source src="videos/example-132345.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                  <a href="videos/example-132345.mp4">Download this clip</a>.
+                </video>
+              </div>
+              <figcaption class="video-caption">Example 5</figcaption>
+            </figure>
+          </div>
+          <p class="video-footnote">
+            Clips are H.264 <span class="mono">.mp4</span> for playback in modern browsers.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="footer-line">
+          <span class="footer-dot" aria-hidden="true"></span>
+          © <span id="year"></span> Zariah
+        </p>
+      </div>
+    </footer>
+
+    <script src="animations.js" defer></script>
+  </body>
+</html>
