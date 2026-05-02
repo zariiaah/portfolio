@@ -187,6 +187,94 @@ body {
   margin-right: auto;
 }
 
+.hero--sub {
+  padding-bottom: clamp(2.25rem, 5vw, 3.25rem);
+}
+
+.hero--sub h1 {
+  font-size: clamp(1.85rem, 3.8vw, 2.35rem);
+}
+
+.nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+.nav a[aria-current="page"]::after {
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.video-grid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2rem);
+  grid-template-columns: 1fr;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 720px) {
+  .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1.35rem;
+  }
+}
+
+.video-embed {
+  margin: 0;
+  text-align: center;
+}
+
+.video-frame {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--border) 92%, var(--accent));
+  background: #141210;
+  box-shadow: var(--shadow);
+  transition: border-color 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out);
+}
+
+.video-embed:hover .video-frame {
+  border-color: color-mix(in srgb, var(--accent) 14%, var(--border));
+  box-shadow: var(--shadow-hover);
+}
+
+.video-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video-caption {
+  margin: 0.75rem 0 0;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.video-footnote {
+  margin: 2.5rem auto 0;
+  max-width: 36rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.55;
+  text-align: center;
+}
+
 .eyebrow {
   font-size: 0.75rem;
   font-weight: 600;
