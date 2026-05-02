@@ -1,4 +1,6 @@
 .DS_Store
+# Source screen recordings; site uses compressed .mp4 in /videos
+videos/*.mov
 *.log
 .env
 .env.*
